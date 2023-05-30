@@ -665,6 +665,7 @@ body{
                         height: auto;
                         min-height: 100vh;
                         background-color: rgba(255, 255, 255, 0);
+                        padding: 10px;
                         .cursos{
                             .finalizados{
                                 .misCursos{
@@ -714,7 +715,7 @@ body{
             }
         }
     }
-    @media (max-width: 359px){
+    @media (max-width: 465px){
         .portfolio{
             .navBar{
                 .img{
