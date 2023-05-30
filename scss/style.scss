@@ -691,6 +691,7 @@ body{
             }
             main{
                 .estudios{
+                    margin-bottom: 5rem;
                     .container{
                         .redes{
                             display: block;
@@ -705,7 +706,7 @@ body{
             main{
                 .sobreMi{
                     .container{
-                        width: 90%;
+                        // width: 90%;
                         padding: 5px;
                     }
                 }
@@ -720,6 +721,14 @@ body{
             .navBar{
                 .img{
                     display: none;
+                }
+            }
+            .main{
+                .inicio{
+                    max-width: 100vw;
+                    .container{
+                        min-width: 100vw;
+                    }
                 }
             }
         }
