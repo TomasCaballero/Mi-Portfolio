@@ -1,317 +1,29 @@
 <!DOCTYPE html>
-<html lang="es">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Este es mi portfolio de presentación.">
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital,wght@0,400;0,600;1,400;1,600&display=swap"
         rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
     <link rel="stylesheet" href="scss/style.css">
-    <link rel="shortcut icon" href="./assets/Img/tc.png" type="image/x-icon">
-    <title>Tomás Caballero</title>
-</head>
+    <link rel="icon" href="src\assets\Img\tc.png" type="image/x-icon">
+    <title>Tomás Bautista Caballero</title>
+  </head>
 
-<body>
-    <div class="portfolio">
 
-        <div class="navBar">
-            <div class="img">
-                <a href="#inicio"><div class="foto"></div></a>
-            </div>
-            <nav id="navbar-example2">
-                <ul class="nav nav-pills">
-                    <li class="nav-item inicioBtn">
-                        <a href="#inicio" class="active"><img src="assets/iconNavbar/home-regular-72.png" alt="icono_inicio"><p>Inicio</p> </a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sobreMi"><img src="assets/iconNavbar/user-solid-72.png" alt="icono-sobre_mi"><p>Sobre mi</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#skills"><img src="assets/iconNavbar/brain-regular-72.png" alt="icono_skills"><p>Skills</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#sitios"><img src="assets/iconNavbar/devices-solid-72.png" alt="icono-sitios"><p>Sitios</p></a>
-                    </li>
-                    <li class="nav-item">
-                        <a href="#estudios"><img src="assets/iconNavbar/certification-regular-72.png" alt="icono_estudios"><p>Estudios</p></a>
-                    </li>
-                </ul>
-            </nav>
-            <div class="redes">
-                <a href="https://www.linkedin.com/in/tomas-caballero-205a1b24a/" target="_blank"><img
-                        src="assets/iconosTecnologias/linkedin.png" alt="linkedin"></a>
-                <a href="https://github.com/TomasCaballero" target="_blank"><img src="assets/iconosTecnologias/github-sign.png"
-                        alt="github"></a>
-                <a href="assets/certificados/Tomás_Bautista_Caballero_CV.pdf" download="CV_Tomas_Caballero" title="Descargar CV"><img src="assets/iconosTecnologias/resume.png" alt="CV"></a>
-            </div>
-        </div>
+  <body>
+    <div id="root">
 
-        <main data-bs-spy="scroll" data-bs-target="#navbar-example2" data-bs-offset="0" class="scrollspy-example"
-            tabindex="0">
-            <div class="inicio" id="inicio">
-                <div class="container">
-                    <div class="nombre">
-                        <p>Tomás Bautista Caballero </p>
-                    </div>
-                    <div class="dedicacion">
-                        -Frontend Developer-
-                    </div>
-                </div>
-            </div>
-
-            <div class="sobreMi" id="sobreMi">
-                <div class="container" data-aos="zoom-in-right">
-                    <div class="titulo">
-                        <h3>SOBRE MI</h3>
-                    </div>
-                    <p class="descripcion">
-                        <strong>Hola! Soy Tomás Bautista Caballero</strong>, un apasionado desarrollador enfocado en el front-end y con aspiraciones de convertirme en un desarrollador full stack.
-                    </p>
-                    <div class="datosEInteres">
-                        <div class="datos">
-                            <h5 class="titulo">Datos Personales</h5>
-                            <div class="nacionalidad">
-                                <p><strong>Nacionalidad: </strong>Argentina</p>
-                            </div>
-                            <div class="nacimiento">
-                                <p><strong>Fecha de nacimiento: </strong>07 / 11 / 1997</p>
-                            </div>
-                            <div class="ubicacion">
-                                <p><strong>Localidad: </strong>Ciudad Autónoma de Buenos Aires, Argentina</p>
-                            </div>
-                            <div class="email">
-                                <p><strong>Email: </strong>caballerotomas97@gmail.com</p>
-                            </div>
-                        </div>
-                        <div class="interes">
-                            <h5 class="titulo">Mis Intereses</h5>
-                            <div class="contenidoInteres">
-                                <div class="tecnologia box"><box-icon class="icon" name='devices' type='solid' color='#ffffff' ></box-icon>Tecnología</div>
-                                <div class="musica box"><box-icon class="icon" name='headphone' color='#ffffff' ></box-icon>Música</div>
-                                <div class="deportes box"><box-icon class="icon" name='football' color='#ffffff' ></box-icon>Deportes</div>
-                                <div class="fotografia box"><box-icon class="icon" name='camera' type='solid' color='#ffffff' ></box-icon>Fotografía</div>
-                                <div class="viajar box"><box-icon class="icon" name='plane-alt' type='solid' color='#ffffff' ></box-icon>Viajar</div>
-                                <div class="juegos box"><box-icon class="icon" name='joystick' type='solid' color='#ffffff' ></box-icon>Juegos</div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="skills" id="skills">
-                <div class="container">
-                    <div class="titulo">
-                        <h3>SKILLS</h3>
-                    </div>
-                    <div class="tecnologias" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
-                        <div class="lenguajes">
-                            <h4>LENGUAJES DE PROGRAMACIÓN</h4>
-                            <div class="contenedorLenguajes">
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/html-5.png" alt="HTML5">
-                                    <p>HTML5</p>
-                                </div>
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/css-3.png" alt="CSS3">
-                                    <p>CSS3</p>
-                                </div>
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/js.png" alt="JS">
-                                    <p>JAVASCRIPT</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="librerias">
-                            <h4>FRAMEWORKS Y LIBRERIAS</h4>
-                            <div class="contenedorLibrerias">
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/bootstrap.png" alt="BOOTSTRAP">
-                                    <p>BOOTSTRAP</p>
-                                </div>
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/react.png" alt="REACT_JS">
-                                    <p>REACT JS</p>
-                                </div>
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/sass.png" alt="SASS">
-                                    <p>SASS</p>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="herramientas">
-                            <h4>HERRAMIENTAS</h4>
-                            <div class="contenedorHerramientas">
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/git.png" alt="GIT">
-                                    <p>GIT</p>
-                                </div>
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/github-sign.png" alt="GITHUB">
-                                    <p>GITHUB</p>
-                                </div>
-                                <div class="contenedor">
-                                    <img src="assets/iconosTecnologias/visual-studio (1).png" alt="VSC" class="vscBg">
-                                    <p>VSC</p>
-                                </div>
-                                <div class="contenedorFigma">
-                                    <img src="assets/iconosTecnologias/Figma-logo.svg" alt="FIGMA" class="figma">
-                                    <p>FIGMA</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="sitios" id="sitios">
-                <div data-aos="fade-up" data-aos-easing="linear" data-aos-duration="1000" class="misSitios">
-                    <div class="card">
-                        <a href="https://tomascaballero.github.io/Kinefi_Caballero/" target="_blank"><img
-                                src="assets/imgSitios/kinefi.webp" alt="kinefi"></img></a>
-                        <div class="contenidoCard">
-                            <div class="nombreDelSitio"><strong>Sitio:</strong> Kinefi</div>
-                            <p class="tecnologias"><strong>Tecnologias:</strong> <img
-                                    src="assets/iconosTecnologias/html-5.png" alt="HTML5">HTML5 / <img
-                                    src="assets/iconosTecnologias/css-3.png" alt="CSS3">CSS3 / <img
-                                    src="assets/iconosTecnologias/sass.png" alt="SASS">SASS / <img
-                                    src="assets/iconosTecnologias/bootstrap.png" alt="BOOTSTRAP">BOOTSTRAP</p>
-                            <div class="repo"><a href="https://github.com/TomasCaballero/Kinefi_Caballero"
-                                    target="_blank"><strong><span>Repositorio</span></strong></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://tomascaballero.github.io/Moncho_Caballero/" target="_blank"><img
-                                src="assets/imgSitios/monchoCC.webp" alt="MonchoCC"></img></a>
-                        <div class="contenidoCard">
-                            <div class="nombreDelSitio"><strong>Sitio:</strong> Moncho Clothing</div>
-                            <p class="tecnologias"><strong>Tecnologias:</strong> <img
-                                    src="assets/iconosTecnologias/html-5.png" alt="HTML5">HTML5 / <img
-                                    src="assets/iconosTecnologias/css-3.png" alt="CSS3">CSS3 / <img
-                                    src="assets/iconosTecnologias/sass.png" alt="SASS">SASS / <img
-                                    src="assets/iconosTecnologias/js.png" alt="JS">JavaScript</p>
-                            <div class="repo"><a href="https://github.com/TomasCaballero/Moncho_Caballero"
-                                    target="_blank"><strong><span>Repositorio</span></strong></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://mitechreact-caballero.vercel.app" target="_blank"><img
-                                src="assets/imgSitios/mitech.webp" alt="MiTech"></img></a>
-                        <div class="contenidoCard">
-                            <div class="nombreDelSitio"><strong>Sitio:</strong> MiTech</div>
-                            <p class="tecnologias"><strong>Tecnologias:</strong> <img
-                                    src="assets/iconosTecnologias/html-5.png" alt="HTML5">HTML5 / <img
-                                    src="assets/iconosTecnologias/css-3.png" alt="CSS3">CSS3 / <img
-                                    src="assets/iconosTecnologias/js.png" alt="JS">JavaScript / <img
-                                    src="assets/iconosTecnologias/react.png" alt="REACT_JS">React JS</p>
-                            <div class="repo"><a href="https://github.com/TomasCaballero/MiTechReact-Caballero"
-                                    target="_blank"><strong><span>Repositorio</span></strong></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://sneaker-nation.vercel.app" target="_blank"><img
-                                src="assets/imgSitios/sneakerNation.png" alt="SneakerNation"></img></a>
-                        <div class="contenidoCard">
-                            <div class="nombreDelSitio"><strong>Sitio:</strong> SneakerNation</div>
-                            <p class="tecnologias"><strong>Tecnologias:</strong> <img
-                                    src="assets/iconosTecnologias/html-5.png" alt="HTML5">HTML5 / <img
-                                    src="assets/iconosTecnologias/sass.png" alt="SASS">SASS / <img
-                                    src="assets/iconosTecnologias/js.png" alt="JS">JavaScript / <img
-                                    src="assets/iconosTecnologias/react.png" alt="REACT_JS">React JS</p>
-                            <div class="repo"><a href="https://github.com/TomasCaballero/MiTechReact-Caballero"
-                                    target="_blank"><strong><span>Repositorio</span></strong></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://pokedex-js-gamma.vercel.app" target="_blank"><img
-                                src="assets/imgSitios/pokedex.webp" alt="Pokedex"></img></a>
-                        <div class="contenidoCard">
-                            <div class="nombreDelSitio"><strong>Sitio:</strong> Pokedex</div>
-                            <p class="tecnologias"><strong>Tecnologias:</strong> <img
-                                    src="assets/iconosTecnologias/html-5.png" alt="HTML5">HTML5 / <img
-                                    src="assets/iconosTecnologias/css-3.png" alt="CSS3">CSS3 / <img
-                                    src="assets/iconosTecnologias/sass.png" alt="SASS">SASS / <img
-                                    src="assets/iconosTecnologias/js.png" alt="JS">JavaScript</p>
-                            <div class="repo"><a href="https://github.com/TomasCaballero/Pokedex-pokeapi"
-                                    target="_blank"><strong><span>Repositorio</span></strong></a></div>
-                        </div>
-                    </div>
-                    <div class="card">
-                        <a href="https://tomascaballero.github.io/Abp-HandOff/" target="_blank"><img
-                                src="assets/imgSitios/abp.webp" alt="Abp-HandOff"></img></a>
-                        <div class="contenidoCard">
-                            <div class="nombreDelSitio"><strong>Sitio:</strong> Trabajo Universitario</div>
-                            <p class="tecnologias"><strong>Tecnologias:</strong> <img
-                                    src="assets/iconosTecnologias/html-5.png" alt="HTML5">HTML5 / <img
-                                    src="assets/iconosTecnologias/css-3.png" alt="CSS3">CSS3 / <img
-                                    src="assets/iconosTecnologias/sass.png" alt="SASS">SASS</p>
-                            <div class="repo2"><a href="https://github.com/TomasCaballero/Abp-HandOff"
-                                    target="_blank"><strong><span>Repositorio</span></strong></a></div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="estudios" id="estudios">
-                <div class="container" data-aos="fade-right" data-aos-easing="linear" data-aos-duration="1000">
-                    <div class="cursos">
-                        <div class="finalizados">
-                            <h4>ESTUDIOS FINALIZADOS</h4>
-                            <div class="misCursos">
-                                <div>- CURSO DE DESARROLLO WEB - <img src="assets/cursos/coderhouse.png" alt="CODERHOUSE"></div>
-                                <div>- CURSO DE JAVASCRIPT - <img src="assets/cursos/coderhouse.png" alt="CODERHOUSE"></div>
-                                <div>- CURSO DE REACT JS - <img src="assets/cursos/coderhouse.png" alt="CODERHOUSE"></div>
-                            </div>
-                        </div>
-                        <div class="enCurso">
-                            <h4>ESTUDIOS EN CURSO</h4>
-                            <div class="misCursos">
-                                <div>- MASTER EN REACT JS - <img src="assets/cursos/UDMY.png" alt="UDEMY"></div>
-                                <div>- DIPLOMATURA EN PROGRAMACIÓN WEB FULL STACK - <img src="assets/cursos/utn.png" alt="UTN" class="utn"></div>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="certi">
-                        <div class="certificadosYCV" id="scrollspyHeading4">
-                            <div class="certificados">
-                                <a href="https://www.coderhouse.com/certificados/62b0fe027c15120021c67340" class="item"
-                                    target="_blank"><img src="assets/certificados/desarrolloweb.png" alt="CERTIFICADO DESARROLLO WEB"></a>
-                                <a href="https://www.coderhouse.com/certificados/63028ded2f4a900024460970" class="item"
-                                    target="_blank"><img src="assets/certificados/js.png" alt="CERTIFICADO JS"></a>
-                                <a href="https://www.coderhouse.com/certificados/6368a279e6706a000fb9f23e" class="item"
-                                    target="_blank"><img src="assets/certificados/reactjs.png" alt="CERTIFICADO REACT_JS"></a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="redes">
-                        <a href="https://www.linkedin.com/in/tomas-caballero-205a1b24a/"><img
-                                src="assets/iconosTecnologias/linkedin.png" alt="linkedin"></a>
-                        <a href="https://github.com/TomasCaballero"><img src="assets/iconosTecnologias/github-sign.png"
-                                alt="github"></a>
-                        <a href="assets/certificados/Tomás_Bautista_Caballero_CV.pdf" download="CV_Tomas_Caballero" title="Descargar CV"><img src="assets/iconosTecnologias/resume.png" alt="CV"></a>
-                    </div>
-                </div>
-            </div>
-        </main>
     </div>
 
 
 
-
-
-
-
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>
-        AOS.init();
-    </script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"
         integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p"
         crossorigin="anonymous"></script>
@@ -319,7 +31,10 @@
         integrity="sha384-cVKIPhGWiC2Al4u+LWgxfKTRIcfu0JTxR+EQDz/bgldoEyl4H0zUF0QKbrJ0EcQF"
         crossorigin="anonymous"></script>
     <script src="https://unpkg.com/boxicons@2.1.4/dist/boxicons.js"></script>
-    <script src="js/main.js"></script>
-</body>
-
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script type="module" src="/src/main.jsx"></script>
+  </body>
 </html>
